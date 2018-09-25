@@ -19,9 +19,7 @@ If the request sent to port 8085 is not an OPTIONS request (ex. POST, PUT, PATCH
 Port 8090 is a web server that serves static content from the `web` directory. It will serve static content for POST requests.
 
 And sometimes you just need an error response:
-* `http://localhost/400`
-* `http://localhost/401`
-* `http://localhost/403`
-* `http://localhost/404`
-* `http://localhost/500`
-* `http://localhost/503`
+* `http://localhost:8090/400`
+* `http://localhost:8090/503`
+
+See nginx.conf for list of all available error messages.
