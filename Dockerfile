@@ -1,10 +1,6 @@
 FROM nginx:latest
 
-COPY .env /etc/nginx/.env
-
-COPY conf.sh /etc/nginx/conf.sh
-
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY .env conf.sh nginx.conf /etc/nginx/
 
 WORKDIR /etc/nginx
 
